@@ -82,7 +82,7 @@ window.setInterval = function(func, ms){
 if(chosenPreset.intervalMult){
 ms = Math.max(1,Math.floor(ms*chosenPreset.intervalMult));
 }
-return originalSetInterval(func,ms);
+return origSetInterval(func,ms);
 };
 /*Patch Date Constructor*/
 var origDate = window.Date;
